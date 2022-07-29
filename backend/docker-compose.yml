@@ -1,0 +1,28 @@
+# Services
+services:
+
+  # Testimony Service
+  restreamer-app:
+    container_name: restreamer-app
+    image: datarhei/restreamer:latest
+    environment:
+      CORE_API_AUTH_USERNAME: ${CORE_API_AUTH_USERNAME}
+      CORE_API_AUTH_PASSWORD: ${CORE_API_AUTH_PASSWORD}
+      CORE_ADDRESS: ${CORE_ADDRESS}
+    ports:
+      - 80:80
+      - 8080:8080
+      - 8181:8181
+      - 1935:1935
+      - 1936:1936
+      - 6000:6000
+    networks:
+      - restreamer
+    volumes:
+      - .config:/core/config
+      - .data:/core/data
+    restart: always
+
+networks:
+  restreamer:
+    name: restreamer
