@@ -6,6 +6,7 @@ services:
     container_name: restreamer-app
     image: datarhei/restreamer:latest
     environment:
+      # https://github.com/datarhei/core#environment-variables
       CORE_API_AUTH_USERNAME: ${CORE_API_AUTH_USERNAME}
       CORE_API_AUTH_PASSWORD: ${CORE_API_AUTH_PASSWORD}
       CORE_ADDRESS: ${CORE_ADDRESS}
