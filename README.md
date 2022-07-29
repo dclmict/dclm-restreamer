@@ -5,5 +5,5 @@ This is an open source, freely available media streaming software developed by [
 
 
 ## Credit
-Made by [Datahei](https://datarhei.com/)
-Adapted by [DCLM ICT team](https://dclmict.org).
+* Made by [Datahei](https://datarhei.com/)
+* Adapted by [DCLM ICT team](https://dclmict.org).
